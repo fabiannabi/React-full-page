@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  min-width: 700px;
+  min-height: 100vh;
+}
+nav {
+  min-height: 15vh;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(206, 117, 94);
+}
+
+.nav img {
+  height: 90px;
+  width: 90px;
+}
+.nav-links {
+  font-size: 24px;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-style {
+  color: white;
+  text-decoration: none;
+}
+.nav-style :hover {
+  color: rgb(100, 3, 3);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.home {
+  text-align: center;
+  min-height: 80vh;
+}
+
+.home {
+  text-align: center;
+  height: 100vh;
+}
+.main {
+  margin: 4rem 0;
+  font-size: 40px;
+}
+
+.pokemon-list,
+.berry-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pokemon-card,
+.berry-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 120px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem 1rem;
+  border-radius: 50px;
+  background: rgb(211, 166, 166);
+  box-shadow: 0px 2px 5px rgb(59, 26, 26), 0px 3px 7px rgb(59, 26, 26);
+}
+.pokemon-card img,
+.berry-card img {
+  height: 40px;
+  width: 40px;
+}
+.pokemon-link,
+.berry-link {
+  color: rgb(100, 3, 3);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.pokemoninfo,
+.Berryinfo {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.info-wraper,
+.berry-info-wraper {
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: rgb(211, 166, 166);
+  height: 400px;
+  width: 550px;
+  box-shadow: 0px 2px 5px rgb(59, 26, 26), 0px 5px 10px rgb(59, 26, 26);
+}
+.berry-info {
+  font-size: 24px;
+}
+.info-wraper h1,
+.berry-info-wraper h1 {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.berry-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.pokemon-img,
+.berry-img {
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.berry-img img {
+  width: 100px;
+  height: 100px;
+}
+.pokemon-stats,
+.berry-stats {
+  color: rgb(100, 3, 3);
+}
+
+.pokemon-stats h1 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.pokemon-stats p {
+  font-size: 20px;
+}
+.pokemon-moveList,
+.berry-flavors {
+  margin: 1rem 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.pokemon-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: "capitalize";
+}
+
+.pokemon-type-single {
+  border-radius: 5px;
+  text-align: center;
+  height: 25px;
+  width: 60px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+.grass {
+  color: rgb(18, 51, 9);
+  background-color: rgb(115, 238, 58);
+  box-shadow: 0px 2px 2px rgb(26, 59, 34), 0px 3px 7px rgb(59, 26, 26);
+}
+.poison {
+  color: rgb(208, 128, 223);
+  background-color: rgb(115, 44, 238);
+  box-shadow: 0px 2px 2px rgb(26, 44, 34), 0px 3px 7px rgb(59, 44, 26);
+}
+.fire {
+  color: rgb(53, 22, 14);
+  background-color: rgb(192, 36, 25);
+  box-shadow: 0px 2px 2px rgb(78, 36, 26), 0px 3px 7px rgb(78, 29, 26);
+}
+.water {
+  color: rgb(9, 27, 51);
+  background-color: rgb(58, 166, 238);
+  box-shadow: 0px 2px 2px rgb(26, 44, 59), 0px 3px 7px rgb(26, 36, 59);
+}
+.bug {
+  color: rgb(31, 54, 29);
+  background-color: rgb(11, 155, 54);
+  box-shadow: 0px 2px 2px rgb(26, 59, 28), 0px 3px 7px rgb(39, 59, 26);
+}
+.flying {
+  color: rgb(11, 87, 87);
+  background-color: rgb(122, 216, 240);
+  box-shadow: 0px 2px 2px rgb(95, 97, 95), 0px 3px 7px rgb(127, 129, 129);
+}
+.normal {
+  color: rgb(61, 58, 54);
+  background-color: rgb(229, 238, 225);
+  box-shadow: 0px 2px 2px rgb(95, 97, 95), 0px 3px 7px rgb(127, 129, 129);
+}
